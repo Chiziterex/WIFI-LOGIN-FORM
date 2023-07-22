@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin :0;
+  padding :0;
+  box-sizing:border-box;
+  text-decoration:none;
+  font-family:'poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  flex-direction:column;
+  gap:30px;
+  background :#2ca7ae;
+}
+
+.content{
+  position:relative;
+  box-shadow:15px 15px 20px rgba(0,0,0,0.3), -15px -15px 20px rgba(0,0,0,0.1);
+  border-radius:5px;
+  padding:80px 50px 50px;
+}
+
+.avatar{
+  position:absolute;
+  width:90px;
+  height:80px;
+  border-radius:50%;
+  overflow:hidden;
+  top:-40px;
+  left:40%;
+}
+
+.input-container{
+ position:relative;
+ width:250px;
+}
+
+.input-container input{
+  width :100%;
+  padding :15px;
+  border:1px solid rgba(255,255,255,0.25);
+  background :#2ca7ae;
+  outline:none;
+  border-radius:5px;
+  color:#fff;
+  transition:0.5s;
+  font-size:1rem;
+  margin-bottom:25px;
+}
+
+.input-container label {
+  position:absolute;
+  left:0;
+  pointer-events:none;
+  padding:10px;
+  font-size:1rem;
+  color:rgba(255,255,255,0.25);
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+.input-container input:valid ~ label,
+.input-container input:focus ~ label 
+{
+  color:#ffffff;
+  transform:translateX(10px) translateY(-7px);
+  font-size:1rem;
+  padding:0 10px;
+  background :#2ca7ae;
+  border-left:1px solid #08007b;
+  border-right:1px solid #08007b;
+  letter-spacing:0.07rem;
+}
+
+.input-container:nth-child(1) input:valid ~ label,
+.input-container:nth-child(1) input:focus ~ label,
+.input-container:nth-child(2) input:valid ~ label,
+.input-container:nth-child(2) input:focus ~ label
+{
+  background :#08007b;
+  border-radius:3px;
+  }
+
+
+.checkbox{
+  display:flex;
+  flex-direction:row;
+}
+
+.checkbox label{
+  color:#08007b;
+  letter-spacing:0.05rem;
+  font-size:1rem;
+  text-transform:uppercase;
+  margin-left:5px;
+  font-weight:400;
+  font-size:1rem;
+  cursor :pointer;
+} 
+
+.box{
+  height:20px;
+  width:20px;
+}
+
+button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  color:#fff;
+  background :#08007b;
+  padding: 7px;
+  margin-top:20px;
+  transition:all ease-in .4s;
+}
+
+button:hover{
+  transform:translateY(5px);
+  box-shadow:1px rgba(0,0,0,0.1);
+  
+} 
+
